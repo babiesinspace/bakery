@@ -100,8 +100,6 @@ cookies = [oatmeal, chocolate_chip]
 cakes = [family_cake, apple_cake, blackout]
 muffins = [lemon_poppy, cranberry, blueberry, bran]
 
-bakery = Bakery.new(cookies, cakes, muffins)
+@bakery = Bakery.new(cookies, cakes, muffins)
 
-
-puts bakery.inventory["muffins"]["Cranberry-Orange Muffin"].description
 
