@@ -35,6 +35,9 @@ class Bakery
     @muffins = {}
     @cakes = {}
     @inventory = {}
+    create_muffin_inventory(muffin_array)
+    create_cakes_inventory(cake_array)
+    create_cookies_inventory(cookie_array)
   end
 
   def add_new_muffin(muffin)
