@@ -8,11 +8,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="hands.jpg"></div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/">Home</a></li>    
+    <li class="divider"></li>
+    <li><a href="/about">About</a></li>
+    <li class="divider"></li>
+    <li><a href="/treats">All</a></li>
+    <li class="divider"></li>
+    <li><a href="/cookies">Cookies</a></li>
+    <li><a href="/cakes">Cakes</a></li>
+    <li><a href="muffins">Muffins</a></li>
+  </ul>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="/treats">All</a></li>
+    <li class="divider"></li>
+    <li><a href="/cookies">Cookies</a></li>
+    <li><a href="/cakes">Cakes</a></li>
+    <li><a href="muffins">Muffins</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
+  </nav>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <%= yield %> 
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+<script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script 
+  type="text/javascript" 
+  src="script.js"></script>
 </body>
 </html>

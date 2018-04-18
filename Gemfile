@@ -3,4 +3,5 @@ source "https://rubygems.org" do
   gem "shotgun"
   gem "sendgrid-ruby"
   gem 'json'
+  gem 'sinatra-flash'
 end
