@@ -1,6 +1,4 @@
-
-
-
+<div class="parallax-container">
   <div id="nav-container">
     <ul class="sidenav" id="mobile-demo">
       <li><a href="/">Home</a></li>    
@@ -34,27 +32,26 @@
     </nav>
   
   </div>
-
-
-
-<div class="container">
-  <div class="row">
-    <% settings.bakery.muffins.values.each do |muffin|%>
-      <div class="col s4">
-        <div class="card small">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="<%= muffin.image %>">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4"><%= muffin.type %><span class="right-align right"><%= muffin.price %></span></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4"><%= muffin.type %><i class="material-icons right">close</i></span>
-            <p><%= muffin.description %></p>
-            <p><%= muffin.price %></p>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
+  <h1 class="display-1 white-text title">Coffee, Wake n' Cake</h1>
+  <div class="parallax"><img src="muffins.jpg"></div>
 </div>
+
+<h1 class="display-1 center-align">Muffins</h1>
+<h3 class="display-1 center-align">Muffin quote here</h3>
+
+<% settings.bakery.muffins.values.each do |muffin|%>
+  <div class="parallax-container">
+    <div class="parallax"><img src="<%= muffin.image %>"></div>
+  </div>
+  <div class="container">
+    <h3><%= muffin.type %></h1>
+  </div>
+  <div class="container">
+    <p><%= muffin.description %></p>
+    <p><%= muffin.price %></p>
+  </div>
+<% end %>
+
+
+
+
