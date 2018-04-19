@@ -1,5 +1,23 @@
+body.vsc-initialized, html {
+  height: 100%; }
+
 img {
   max-width: 100%;
   height: auto; }
+
+div#nav-container {
+  background-color: transparent; }
+
+nav#nav {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); }
+
+div.nav-wrapper {
+  background-color: transparent; }
+
+.title {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 9px black, 0px 9px 22px rgba(255, 255, 255, 0.7); }
 
 /*# sourceMappingURL=main.css.map */

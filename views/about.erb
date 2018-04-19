@@ -1,4 +1,42 @@
-<h1>About Page</h1>
+
+  <div id="nav-container">
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/">Home</a></li>    
+      <li class="divider"></li>
+      <li><a href="/about">About</a></li>
+      <li class="divider"></li>
+      <li><a href="/treats">All</a></li>
+      <li class="divider"></li>
+      <li><a href="/cookies">Cookies</a></li>
+      <li><a href="/cakes">Cakes</a></li>
+      <li><a href="muffins">Muffins</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="/treats">All</a></li>
+      <li class="divider"></li>
+      <li><a href="/cookies">Cookies</a></li>
+      <li><a href="/cakes">Cakes</a></li>
+      <li><a href="muffins">Muffins</a></li>
+    </ul>
+    <nav id="nav">
+      <div class="nav-wrapper blue-grey darken-4">
+<!--         <a href="/" class="brand-logo display-3">Coffee, Wake n' Cake</a> -->
+        <ul class="left hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons left">arrow_drop_down</i></a></li>
+        </ul>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  
+  </div>
+
+<div class="container">
+  <h1>About Page</h1>
+  <p>Started in 2016 in her own kitchen, Alexandra Cooper began selling her treats to customers from her bartending job. Word of mouth spread - and her business slowly grew. Because of her passion to try new techniques and develop new recipes - the first question asked of each new customer was, "What do you love? I want to figure out how to make it.". Driven by her curiosity, a reputation of unyielding customer service took her business out of her kitchen and into a shop of her own.</p>
+</div>
 
 <div id="modal1" class="modal">
   <div class="modal-content">
@@ -9,7 +47,6 @@
     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Got it!</a>
   </div>
 </div>
-
 
 <div class="container">
   <div class="row">
@@ -30,7 +67,7 @@
         <div class="input-field col s10">
           <i class="material-icons prefix">favorite</i>
           <textarea id="textarea1" name="opinion" class="materialize-textarea"></textarea>
-          <label for="icon_favorite">What's your favorite baked good, or what can we add?</label>
+          <label for="icon_favorite">What do you love? I want to figure out how to make it.</label>
         </div>
         <div class="input-field col s2">
           <button data-target="modal1" class="btn waves-effect modal-trigger waves-light" type="submit" name="action">Submit
