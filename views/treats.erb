@@ -35,3 +35,41 @@
   <h1 class="display-1 white-text title" id="heading-1">Coffee, Wake n' Cake</h1>
   <div class="parallax"><img src="baked.jpg"></div>
 </div>
+
+<h1 class="display-1 center-align" id="heading-1">Our Current Menu</h1>
+
+<div class="carousel">
+  <% settings.bakery.inventory.keys.each do |bakedgood|%>
+    <% settings.bakery.inventory[bakedgood].values.each do |item|%>
+      <a class="carousel-item" href="/"><img class="carousel-pic" src="<%= item.image %>"></a>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="container">
+  <div class="row">
+    <% settings.bakery.inventory.keys.each do |bakedgood|%>
+      <% settings.bakery.inventory[bakedgood].values.each do |item|%>
+        <div class="col s4">
+          <div class="card small">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="<%= item.image %>">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"><%= item.type %><span class="right-align right"><%= item.price %></span></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><%= item.type %><i class="material-icons right">close</i></span>
+              <p><%= item.description %></p>
+              <p><%= item.price %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+
+
+

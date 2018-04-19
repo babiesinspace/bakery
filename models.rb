@@ -97,7 +97,7 @@ cranberry = Muffin.new("Cranberry-Orange Muffin", "The perfect fall inspired muf
 
 blueberry = Muffin.new("Jordan Marsh's Blueberry Muffins", "The classic blueberry muffin taken straight from the popular department store recipe. You may be inclined to ask, 'Classic muffin recipe from a department store?'. Trust us.", "blueberry.jpg")
 
-bran = Muffin.new("Get-Up-And-Go! Bran Muffin", "As the name implies - these bran muffins are cram-jam full of nutritious ingredients like wheat bran, whole-grains, applesauce and blackstrap molasses. With a healthy dose of iron and protein, and 20% of your daily fiber intake - this grab and go breakfast will get you started on the right foot. For $2 extra - served toasted with your choice of nut spread and seasonal jam, or honey and flavored butter.", "bran.jpg")
+bran = Muffin.new("Get-Up-And-Go! Bran Muffin", "As the name implies - these bran muffins are cram-jam full of nutritious ingredients like wheat bran, whole-grains, applesauce and blackstrap molasses. With a healthy dose of iron and protein, and 20% of your daily fiber intake - this grab and go breakfast will get you started on the right foot. For $2 extra - served toasted with your choice of nut spread and seasonal jam, or honey and flavored butter.", "bran3.jpg")
 
 cookies = [oatmeal, chocolate_chip]
 cakes = [family_cake, apple_cake, blackout]
