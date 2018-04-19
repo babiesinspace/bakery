@@ -1,1 +1,57 @@
-<h1>Cookies Page</h1>
+<div class="parallax-container">
+  <div id="nav-container">
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/">Home</a></li>    
+      <li class="divider"></li>
+      <li><a href="/about">About</a></li>
+      <li class="divider"></li>
+      <li><a href="/treats">All</a></li>
+      <li class="divider"></li>
+      <li><a href="/cookies">Cookies</a></li>
+      <li><a href="/cakes">Cakes</a></li>
+      <li><a href="muffins">Muffins</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="/treats">All</a></li>
+      <li class="divider"></li>
+      <li><a href="/cookies">Cookies</a></li>
+      <li><a href="/cakes">Cakes</a></li>
+      <li><a href="muffins">Muffins</a></li>
+    </ul>
+    <nav id="nav">
+      <div class="nav-wrapper">
+<!--         <a href="/" class="brand-logo display-3">Coffee, Wake n' Cake</a> -->
+        <ul class="left hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons left">arrow_drop_down</i></a></li>
+        </ul>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  
+  </div>
+  <h1 class="display-1 white-text title">Coffee, Wake n' Cake</h1>
+  <div class="parallax"><img src="baked.jpg"></div>
+</div>
+
+<h1 class="display-1 center-align">Cookies</h1>
+<h3 class="display-1 center-align">Cookie quote here</h3>
+
+<% settings.bakery.cookies.values.each do |cookie|%>
+  <div class="parallax-container">
+    <div class="parallax"><img src="<%= cookie.image %>"></div>
+  </div>
+  <div class="container">
+    <h3><%= cookie.type %></h1>
+  </div>
+  <div class="container">
+    <p><%= cookie.description %></p>
+    <p><%= cookie.price %></p>
+  </div>
+<% end %>
+
+
+
+
