@@ -1,32 +1,33 @@
 #nice to have: seasons sold - so that they can be showcased on the site but with disabled ordering button?
 
-class Cake
+class Baked_Good
+  attr_reader :type, :description, :price, :image
+  def initialize(type, description, image, price)
+    @type = type
+    @description = description
+    @price = price
+    @image = image
+  end 
+end 
+
+class Cake < Baked_Good
   attr_reader :type, :description, :price, :image
   def initialize(type, description, image, price="$8")
-    @type = type
-    @description = description
-    @price = price
-    @image = image
+    super
   end 
 end 
 
-class Cookie
+class Cookie < Baked_Good
   attr_reader :type, :description, :price, :image
   def initialize(type, description, image, price="$4")
-    @type = type
-    @description = description
-    @price = price
-    @image = image
+    super
   end 
 end 
 
-class Muffin
+class Muffin < Baked_Good
   attr_reader :type, :description, :price, :image
   def initialize(type, description, image, price="$5")
-    @type = type
-    @description = description
-    @price = price
-    @image = image
+  super
   end 
 end 
 
